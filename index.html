@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptar y Desencriptar Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    
+    <div class="input-container">
+        <h1>¡ENCRIPTA!</h1>
+        <input type="text" id="userInput" placeholder="Escribe aquí...">
+        <label for="userInput">Solo letras minúsculas y sin acentos:</label>
+        <div class="button-container">
+            <button onclick="encriptarTexto()">Encriptar</button>
+            <button onclick="desencriptarTexto()">Desencriptar</button>
+        </div>
+    </div>
+
+    <!-- Elemento donde se mostrará el resultado -->
+    <div id="result" class="result-container">
+        <!-- Contenedor para imagen y texto del resultado -->
+        <div class="result-content">
+            <img src="img/imagen-pagina.png" alt="Imagen relacionada con encriptación" id="resultImage">
+            <p id="resultText"></p>
+            <button onclick="copiarYRestablecer()">Copiar</button>
+        </div>
+    </div>
+
+    <!-- Referencia al archivo JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
+
+

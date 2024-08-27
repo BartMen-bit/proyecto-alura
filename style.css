@@ -1,0 +1,170 @@
+/* Estilo básico de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+    box-sizing: border-box;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 1000%; /* Aumenta el ancho del contenedor principal */
+    max-width: 200px; /* Aumenta el máximo ancho del contenedor principal */
+    text-align: center;
+    box-sizing: border-box; /* Incluye el padding y el borde en el cálculo del ancho y alto */
+}
+
+
+/* Título */
+h1 {
+    font-size: 5vw; /* Título adaptable */
+    color: #001f6e;
+    margin-bottom: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Estilo del input de texto */
+.input-container input {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    padding: 15px;
+    font-size: 4vw;
+    max-height: 250px; /* Ajuste máximo para pantallas grandes */
+    border: 2px solid #f5f5f5;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    border-style: none;
+    background-color: #f5f5f5;
+}
+
+/* Texto de ayuda bajo el input */
+.input-container small {
+    color: #888;
+    margin-bottom: 20px;
+    font-size: 3vw;
+}
+
+/* Contenedor de los botones */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Reducido para mejorar la distribución en pantallas pequeñas */
+    flex-wrap: wrap; /* Permite que los botones se ajusten en pantallas pequeñas */
+}
+
+/* Estilo de los botones */
+.button-container button {
+    background-color: #001f6e;
+    color: white;
+    border: none;
+    padding: 15px 5vw;
+    font-size: 4vw;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex-grow: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.button-container button:nth-child(2) {
+    background-color: #cccccc;
+    color: #666666;
+}
+
+.button-container button:hover {
+    background-color: #0044cc;
+}
+
+/* Contenedor del resultado */
+.result-container {
+    width: 100%;
+    max-width: 300px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+/* Imagen del resultado */
+.result-container img {
+    max-width: 70%;
+    margin-bottom: 10%;
+}
+
+/* Texto del resultado */
+.result-container p {
+    font-size: 4vw;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Botón de copiar */
+.result-container button {
+    background-color: #cccccc;
+    color: #666666;
+    border: none;
+    padding: 10px 20px;
+    font-size: 4vw;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.result-container button:hover {
+    background-color: #999999;
+}
+
+/* Media Queries para pantallas más grandes */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Ajuste para pantallas medianas y grandes */
+    }
+
+    .input-container input {
+        font-size: 1rem; /* Tamaño de fuente más pequeño en pantallas grandes */
+    }
+
+    .input-container small {
+        font-size: 1rem; /* Tamaño de fuente más pequeño en pantallas grandes */
+    }
+
+    .button-container button {
+        font-size: 1rem; /* Tamaño de fuente más pequeño en pantallas grandes */
+        padding: 15px 25px;
+    }
+
+    .result-container p {
+        font-size: 1rem; /* Tamaño de fuente más pequeño en pantallas grandes */
+    }
+
+    .result-container button {
+        font-size: 1rem; /* Tamaño de fuente más pequeño en pantallas grandes */
+    }
+}
+
+
+
+
+
